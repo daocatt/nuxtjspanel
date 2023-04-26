@@ -222,24 +222,34 @@ export const defaulter = {
  * @type {Object}
  */
 export const login = {
+
   beforeEach(value, resolve, config) {
     //  设置唯一Key
     const keys = Object.keys(value);
     const argument = value[keys[0]];
-    const url = '/api/admin.login/doLogin';
+    const url = '/api/test.login';
     resolve({
       url,
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       data: argument[1]
     });
+    resolve({
+      'method': 'post',
+      'data' : {},
+    });
   },
   afterEach(value, resolve) {
     
-    console.log(value);
-
-    
-
+    value = {
+      'status':'success',
+      'data':{
+        'auth_token'  :'123',
+        'appID'       :'panelcc',
+        'expired_time':18600,
+      }
+    };
+    console.log(value)
 
     if(value.status === 'success')
     {

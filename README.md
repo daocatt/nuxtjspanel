@@ -58,7 +58,7 @@ env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appID: '123',
     appName: 'adminsys',
-    appUrl: 'http://soda.dev',
+    appUrl: 'http://panel.cc',
   },
   
 ```
@@ -77,7 +77,7 @@ of conduct, and the process for submitting pull requests to us.
 ## Authors
 
   - **Daocatt** - *PHP developer* -
-    [Suda.one](https://suda.one)
+    [panel.cc](https://panel.cc)
 
 
 ## License

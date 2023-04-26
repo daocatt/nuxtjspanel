@@ -95,7 +95,7 @@ export default {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appID: 'soda008',
     appName: 'admin',
-    appUrl: 'http://soda.chat',
+    appUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
   rules: {

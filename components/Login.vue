@@ -50,7 +50,7 @@ export default {
   mounted() {
     // this.getRecord();
     this.siteName = process.env.siteName;
-    this.getCopyright();
+    // this.getCopyright();
   },
   methods: {
     submitForm() {
@@ -64,7 +64,7 @@ export default {
           {
             setTimeout(() => {
               this.$router.push({ path: `/dashboard` }).catch(err=>{
-                console.log(err);
+                console.error(err)
               });
             }, 1000);
           } else {
